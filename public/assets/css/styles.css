@@ -305,3 +305,34 @@ h1 .mobile-headline em{font-style:normal;background:linear-gradient(90deg,#4fe3f
 }
 
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+/* ======================================
+   CORREÇÃO APENAS DO TÍTULO NO DESKTOP
+====================================== */
+@media (min-width: 901px) {
+
+  .hero-copy h1 {
+    max-width: 100% !important;
+    font-size: clamp(52px, 4.8vw, 72px) !important;
+    line-height: .94 !important;
+    letter-spacing: -.045em !important;
+  }
+
+  .hero-copy h1 .desktop-headline {
+    display: block !important;
+  }
+
+  /* permite a quebra natural em 2 linhas */
+  .hero-copy h1 .headline-top {
+    display: block !important;
+    max-width: 100% !important;
+    white-space: normal !important;
+  }
+
+  /* mantém "para o seu carro" inteiro */
+  .hero-copy h1 .headline-bottom {
+    display: block !important;
+    white-space: nowrap !important;
+    font-size: .94em !important;
+    margin-top: .04em;
+  }
+}
