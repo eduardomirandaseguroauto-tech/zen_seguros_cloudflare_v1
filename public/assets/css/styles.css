@@ -72,6 +72,9 @@ h1{
 h1 .headline-top{display:block;max-width:10.5ch}
 h1 .headline-bottom{display:block;white-space:nowrap;color:var(--text);font-size:.94em}
 h1 .headline-bottom em{font-style:normal;background:linear-gradient(90deg,#4fe3ff,#1488ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+h1 .desktop-headline{display:block}
+h1 .mobile-headline{display:none}
+h1 .mobile-headline em{font-style:normal;background:linear-gradient(90deg,#4fe3ff,#1488ff);-webkit-background-clip:text;background-clip:text;color:transparent}
 .lead{max-width:720px;margin:18px 0 0;color:#dce8f8;font-size:18px;line-height:1.5}
 .lead strong{color:#64d8ff}
 
@@ -237,9 +240,11 @@ h1 .headline-bottom em{font-style:normal;background:linear-gradient(90deg,#4fe3f
   .hero-copy{order:1;text-align:center;width:100%;max-width:100%}
   .eyebrow,h1,.lead{text-align:center;margin-left:auto;margin-right:auto}
   .eyebrow{font-size:10px;margin-bottom:8px}
-  h1{font-size:clamp(30px,8.7vw,38px);line-height:.98;max-width:100%;padding:0 2px}
-  h1 .headline-top,h1 .headline-bottom{display:block;white-space:nowrap;max-width:none}
-  h1 .headline-bottom{font-size:1em}
+  h1{font-size:clamp(29px,7.6vw,34px);line-height:1.04;max-width:100%;padding:0 18px}
+  h1 .desktop-headline{display:none}
+  h1 .mobile-headline{display:block;width:100%}
+  h1 .mobile-line-1,h1 .mobile-line-2{display:block;white-space:nowrap;text-align:center}
+  h1 .mobile-line-2{margin-top:4px}
   .lead{max-width:94%;font-size:15px;line-height:1.48;margin-top:14px}
 
   /* 2 itens na primeira linha + 1 centralizado na segunda */
@@ -292,7 +297,7 @@ h1 .headline-bottom em{font-style:normal;background:linear-gradient(90deg,#4fe3f
 
 @media (max-width:430px){
   .header{height:82px}.brand{width:195px}
-  h1{font-size:clamp(28px,8.6vw,36px)}.lead{font-size:14px}
+  h1{font-size:clamp(27px,7.4vw,31px);padding-left:20px;padding-right:20px}.lead{font-size:14px}
   .hero-visual{height:405px}.eduardo{height:395px;right:-4%}
   .signature{top:16%;left:4%;width:165px;max-width:43%}
   .eduardo-card{left:4%;bottom:7%;width:240px;max-width:62%}
